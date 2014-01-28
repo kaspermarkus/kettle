@@ -238,7 +238,7 @@ kettle.tests.request.http.send = function (requestOptions, termMap, cookieJar, c
                 cookieJar.parser(pseudoReq, {}, fluid.identity);
             }
             callback(data, res.headers, pseudoReq.cookies,
-                pseudoReq.signedCookies);
+                pseudoReq.signedCookies, options.passthrough);
         });
     });
 
